@@ -1,7 +1,7 @@
 import  requests
 import  json
 text = input("Enter You City Name: ")
-url = f"https://api.weatherapi.com/v1/current.json?key=7f0d7df86448466d8e493612230408&q={text}" # Using API
+url = f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q={text}" # Using API
 r = requests.get(url)
 # print(r.text)
 dweather = json.loads(r.text)
